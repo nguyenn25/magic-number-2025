@@ -9,7 +9,10 @@ using std::endl;
 int main() {
     // Random number between 1-10;
     srand(time(0));
-    int magic = rand() % 10 + 1; // methods <> functions
+    int max;
+    cout << "What is the maximum number you want to guess?: " << endl;
+    cin >> max;
+    int magic = rand() % max + 1; // methods <> functions
     int guess;
     cout << "How many lives do you want?: ";
     int life;
