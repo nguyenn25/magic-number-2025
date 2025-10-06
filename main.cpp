@@ -11,7 +11,9 @@ int main() {
     srand(time(0));
     int magic = rand() % 10 + 1; // methods <> functions
     int guess;
-    int life = 3;
+    cout << "How many lives do you want?: ";
+    int life;
+    cin >> life;
     cout << "What is your guess: ";
     while (life > 0) {
         cin >> guess;
